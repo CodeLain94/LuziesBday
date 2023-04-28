@@ -22,21 +22,16 @@
     />
   </head>
   <body>
-    <h1 id="changing-text">Hallo Luzie <3</h1>
     <div class="container">
-      <!-- <h1>Alles Gute zum Geburtstag Luzie</h1> -->
-
-      <!-- <p id="my-text" class="fade-in">
-        This is some text that will change three times.
-      </p> -->
-
-      <!-- Add the box inside the wrapper -->
+      <h1 id="changing-text">Hallo Luzie <3</h1>
     </div>
   </body>
   <style>
     html {
       width: 100%;
       height: 100%;
+      margin: 0;
+      padding: 0;
     }
     body {
       /* background-image: url("https://w.forfun.com/fetch/8a/8a9f2adb9b92e59c0d47bf7733a08f57.jpeg?h=1200&r=0.5"); */
@@ -46,14 +41,19 @@
       background-repeat: no-repeat;
       height: 100%;
       width: 100%;
+      background-position: center;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       height: 100%;
+      width: 100%;
+      /* padding: 10px; */
     }
     h1 {
       /* font-family: "Sacramento", cursive; */
@@ -63,10 +63,11 @@
       font-size: 3rem;
       font-weight: 400;
       text-align: center;
-      margin: 10;
-      margin-top: 90;
+      margin: 40px;
+      /* margin-top: 90; */
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      /* padding: 100; */
     }
     /* Add styles for the fade-in/out effect */
     .fade-in {
@@ -140,6 +141,6 @@
     }
 
     // Call the changeText function every 5 seconds to cycle through the texts
-    setInterval(changeText, 5000);
+    setInterval(changeText, 4000);
   </script>
 </html>
